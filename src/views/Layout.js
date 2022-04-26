@@ -4,9 +4,16 @@ import Nav from 'react-bootstrap/Nav'
 import './Layout.css'
 
 import Container from 'react-bootstrap/Container'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 
 export const Layout = () => {
+
+    const navigate = useNavigate()
+    const handleLogout = () => {
+        localStorage.removeItem('token')
+        navigate('/', {replace: true})
+
+    }
   return (
     <main>
         <Navbar bg='dark' variant='dark'>
@@ -41,7 +48,7 @@ export const Layout = () => {
                 <Nav>
                     <Nav.Item>
                         <Nav.Link>
-                            <div >Sign Out</div>
+                            <div className='btn-logout' onClick={handleLogout}>Sign Out<i className='bi bi-box-arrow-right'></i></div>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>

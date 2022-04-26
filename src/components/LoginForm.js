@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 const LoginForm = () => {
   const form = useRef()
   const navigate = useNavigate()
+  const [modalShow, setModalShow] = useState(false)
   
   /*const handleSubmit = (event) => {
     event.preventDefault()
@@ -35,8 +36,9 @@ const LoginForm = () => {
       //document.cookie = `token=${data.token}; expires=${fecha.toUTCString()}`
 
       navigate('/home')
+    } else {
+        setModalShow(true)
     }
-
   }
 
   return (
@@ -55,6 +57,10 @@ const LoginForm = () => {
         </Form.Group>
         <Button className="w-100" type="submit" variant="primary">Iniciar sesión</Button>
       </Form>
+      <ErrorModal show={modalShow}
+                  title='Titulo'
+                  message='Usuario o contraseña incorrectas'
+                  onClose={() => setModalShow(false)}/>
     </Container>
   )
 }
