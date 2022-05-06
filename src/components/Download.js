@@ -11,7 +11,7 @@ const Download = () => {
       <h4 className='text-center mt-5'>Descargar Juego</h4>
       <Button className="w-40 sign-up-button" type="submit">
         <i className="bi bi-download">  </i>
-        <a className='sign-up-alt' href='https://i.pinimg.com/564x/28/80/21/288021f0cc643a9a1ddd5f2e1b9ff08e.jpg' target='_blank' rel="noreferrer">Descargar</a>
+        <a className='sign-up-alt' href='https://drive.google.com/drive/folders/1s-ESPulmZTWrsiFQvxSGcZS4epr5UcS-?usp=sharing' target='_blank' rel="noreferrer">Descargar</a>
       </Button>
     </Container>
   )
