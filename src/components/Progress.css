@@ -1,0 +1,27 @@
+.profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.objs {
+    margin-left: 0px;
+    margin-top: 30px;
+
+}
+
+.objs-bar {
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-right: 30px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.welcome {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    color: #f3cb19;
+
+}

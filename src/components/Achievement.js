@@ -1,30 +1,50 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import './Achievement.css'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col' 
+import Container from 'react-bootstrap/Container'
+
 
 const Achievement = () => {
 
-    const response = fetch("http://localhost:4000/login", 
-                                  {method: 'GET'})
-    const achievements = await response.json()
-    
+    const [achievements, setAchievement] = useState([])
+
+    useEffect(()=>{
+        getAchievements();
+    }, [])
+
+    const getAchievements = async () =>{
+        const response = await fetch(`http://localhost:4000/logrosWithId/${localStorage.getItem('idUsuario')}`, 
+                                    {method: 'GET',
+                                     headers: {'x-access-token' : localStorage.getItem('token')} 
+                                    })
+        const data = await response.json()
+
+        setAchievement(data)
+        
+    }
+
   return (
-    <div className='achievements'>
-        <article>
-        <h1>Achievements</h1>
-        <ul>
-            {
-                achievements.map( achievement => (
-                    <li>
-                        <Link to={'/games/'+achievement.id}>{achievement.name}</Link>                    
-                    </li>
-                ))
-            }
-        </ul>
-        </article>
-        <article>
-            <Outlet/>
-        </article>
-    </div>
+    <Container>
+        <Row><h3 className='headers'>Logros</h3></Row>
+        <Row className='achievement-acc'>
+            <Col></Col>
+            <Col xs='11'>
+                <ListGroup variant="flush">
+                    {
+                        achievements.map( achievement => (
+                            <ListGroup.Item key={achievement.nombre}>
+                                <i className="bi bi-unlock-fill"> </i>{achievement.nombre}
+                            </ListGroup.Item>
+                        ))
+                    }       
+                </ListGroup>
+            </Col>
+            <Col></Col>
+        </Row>
+    </Container>
+                
   )
 }
 

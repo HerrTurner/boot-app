@@ -1,0 +1,15 @@
+.friend-ls {
+    margin-top: 15px;
+}
+
+.team-bg {
+    background-color: transparent;
+}
+
+.friend-list {
+    margin-top: 15px;
+}
+
+.friend:hover {
+    background-color: #ece8d8;
+}

@@ -1,0 +1,46 @@
+.sign-up {
+    text-decoration: none;
+    color: #f3cb19;
+    margin-top: 0px;
+}
+
+.sign-up:hover {
+    color: #d1af17;
+}
+
+.sign-up-alt {
+    text-decoration: none;
+    color: white;
+    margin-top: 0px;
+}
+
+.sign-up-alt:hover {
+    color: white;
+}
+
+.sign-up-button {
+    background-color: #f3cb19 ;
+    border-color: transparent;
+}
+
+.sign-up-button:hover {
+    background-color: #d1af17 ;
+    border-color: transparent;
+}
+
+.sign-up-button::selection {
+    background-color: #d1af17 ;
+    border-color: transparent;
+}
+
+.back-image {
+    background-image: url('../images/login_bg.png');
+}
+
+.sign-up-logo {
+    max-width: 300px;
+}
+
+.team-bg {
+    background-color: transparent;
+}

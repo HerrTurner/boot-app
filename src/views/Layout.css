@@ -1,8 +1,49 @@
-.navBar {
+.nav-item a {
+    color: white !important;
+}
+.color-nav a {
     text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+.color-nav a:hover {
+    color: #f1e7b8;
+}
+
+.achievement-item {
+    text-decoration: none;
+    color: black;
+}
+
+.achievement-item:hover{
+    color: gray;
+}
+
+.color-nav {
+    background-color: #f3cb19;
+}
+
+.btn-cerrar {
     color: white;
 }
 
-.navBar:hover {
-    color: white;
+.btn-cerrar:hover {
+    color: #f1e7b8;
+}
+
+.headers {
+    color: #f3cb19;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+#dd-items {
+    color: black;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.all-bg {
+    background-image: url('../images/team-bg.png');
 }

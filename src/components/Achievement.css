@@ -1,0 +1,22 @@
+.achievement-ls {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.team-bg {
+    background-color: transparent;
+}
+
+.achievement-des {
+    margin-top: 80px;
+}
+
+.achievement-acc {
+    margin-top: 15px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f3cb19;
+    background-color: #ece8d8;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
