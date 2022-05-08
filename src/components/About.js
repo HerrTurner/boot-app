@@ -3,11 +3,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
-import alex from '../images/alex.jpeg'
-import emma from '../images/emma.jpeg'
-import mike from '../images/mike.jpeg'
-import marco from '../images/marco.jpeg'
-import turner from '../images/turner.jpeg'
+import alex from '../images/Alejandro.jpeg'
+import emma from '../images/Emmanuel.jpg'
+import mike from '../images/Miguel.png'
+import marco from '../images/Marco.jpg'
+import turner from '../images/Jorge.png'
 import './About.css'
 import '../views/Layout.css'
 
@@ -26,7 +26,7 @@ const About = () => {
         <Card.Body>
           <Card.Title>Alex Hidalgo</Card.Title>
           <Card.Text>
-            Jijijaja
+            Desarrollo en Unity en GPS
           </Card.Text>
         </Card.Body>
       </Card>
@@ -37,7 +37,7 @@ const About = () => {
         <Card.Body>
           <Card.Title>Emmanuel Prieto</Card.Title>
           <Card.Text>
-            No soy científico
+            Desarrollo en Unity en minijuegos
           </Card.Text>
         </Card.Body>
       </Card>
@@ -48,7 +48,7 @@ const About = () => {
         <Card.Body>
           <Card.Title>Marco Gardida</Card.Title>
           <Card.Text>
-            Simpático 24/7
+            Desarrollo en Unity y Documentacion
           </Card.Text>
         </Card.Body>
       </Card>
@@ -59,7 +59,7 @@ const About = () => {
         <Card.Body>
           <Card.Title>Miguel Jimenez</Card.Title>
           <Card.Text>
-            Reprobé Historia
+            Desarollo en Unity en Vuforia
           </Card.Text>
         </Card.Body>
       </Card>
@@ -70,7 +70,7 @@ const About = () => {
         <Card.Body>
           <Card.Title>Jorge Turner</Card.Title>
           <Card.Text>
-            Funcionamos, apenas
+            Desarrollo Web y Documentación
           </Card.Text>
         </Card.Body>
       </Card>

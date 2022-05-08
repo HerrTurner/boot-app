@@ -13,7 +13,7 @@ const Home = () => {
         <p className='text-center'>AR Point busca hacer las visitas a museos y exhibicinones más dinámicas y divertidas</p>
         <p className='text-center'>Con realidad mixta puedes recorrer lugares, interacciona con las obras de arte, aprende y diviértete consiguiendo logros únicos</p>
       </article>
-      <Carousel className='mt-5'>
+      <Carousel className=' mt-5'>
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 img-format"
